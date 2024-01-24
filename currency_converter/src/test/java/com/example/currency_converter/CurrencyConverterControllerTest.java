@@ -1,22 +1,36 @@
 package com.example.currency_converter;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 
 class CurrencyConverterControllerTest {
-//    Correct Input Tests
     private static CurrencyConverterController controller;
+    @Mock
+    private CurrencyConverterController mockController = mock(CurrencyConverterController.class);
 
     @BeforeAll
     static void setUpClass() {
         controller = new CurrencyConverterController();
     }
+
+    @BeforeEach
+    void setup() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+
+//    _________________________________
+//    Correct Input Format Tests
     @Test
     @DisplayName("Currency Empty Value Test")
     void isValid_emptyValue_returnsFalse() {
@@ -53,6 +67,13 @@ class CurrencyConverterControllerTest {
     }
 
     @Test
+    @DisplayName("Currency with Negative Value")
+    void isValid_negativeValue_returnsFalse() {
+        String input = "-10.5";
+        assertFalse(controller.isValidNumber(input));
+    }
+
+    @Test
     @DisplayName("Currency with Float Value")
     void isValid_floatValue_returnsTrue() {
         String input = "92.10";
@@ -60,7 +81,6 @@ class CurrencyConverterControllerTest {
     }
 //__________________________________________________________
 //    Currency List Retrieval Tests
-
     @Test
     @DisplayName("Get Currencies returns proper list")
     void getCurrencies_returnsProperly() {
@@ -83,9 +103,20 @@ class CurrencyConverterControllerTest {
         ArrayList<String> currencies_name_list = new ArrayList<>(List.of(currencies_array));
         assertEquals(currencies_name_list, controller.getCurrencies());
     }
+    @ParameterizedTest
+    @DisplayName("Correctly Extracting data from file")
+    @CsvFileSource(files = "src/main/resources/data/conversion_rates.csv", numLinesToSkip = 1)
+    void getConversionRates_returnsProperly(String currency_name, Double dollar_to_currency, Double currency_to_dollar) {
+        assertNotNull(currency_name);
+        assertNotNull(dollar_to_currency);
+        assertNotNull(currency_to_dollar);
+        assertNotEquals(0, dollar_to_currency);
+        assertNotEquals(0, currency_to_dollar);
+    }
 
     //__________________________________________________________
 //    Valid Currency Selection Tests
+
     @Test
     @DisplayName("Valid Currency, same currency selected")
     void isValidChoice_sameCurrency_returnsFalse() {
@@ -117,9 +148,9 @@ class CurrencyConverterControllerTest {
         String currency_two = "USD";
         assertTrue(controller.isValidChoice(currency_one, currency_two));
     }
-
     //__________________________________________________________
 //    Correct Conversions Tests
+
     @Test
     @DisplayName("Conversion to USD")
     void convertCurrency_toUSD() {
@@ -132,8 +163,8 @@ class CurrencyConverterControllerTest {
         String result = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[0];
         String rate = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[1];
 
-        assertEquals("1.1",result);
-        assertEquals("1.1",rate);
+        assertEquals("1.1", result);
+        assertEquals("1.1", rate);
     }
 
     @Test
@@ -148,8 +179,8 @@ class CurrencyConverterControllerTest {
         String result = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[0];
         String rate = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[1];
 
-        assertEquals(".91",result);
-        assertEquals(".91",rate);
+        assertEquals(".91", result);
+        assertEquals(".91", rate);
     }
 
     @Test
@@ -164,7 +195,60 @@ class CurrencyConverterControllerTest {
         String result = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[0];
         String rate = controller.convertCurrency(currency_one, currency_two, Double.parseDouble(amount))[1];
 
-        assertEquals("4.09",result);
-        assertEquals("4.09",rate);
+        assertEquals("4.09", result);
+        assertEquals("4.09", rate);
+    }
+
+    //    -----------------------------------------
+    @Test
+    @DisplayName("Negative amount Test")
+    void negativeAmount_mocKTest() {
+        String negativeAmount = "-5.4";
+
+        //isvalidchoice returns false
+        when(!mockController.isValidNumber(negativeAmount)).thenReturn(false);
+        Assertions.assertFalse(mockController.isValidNumber(negativeAmount));
+    }
+
+    @Test
+    @DisplayName("Empty Base Currency Test")
+    void emptyBaseCurrency_mocKTest() {
+        String base_currency = "";
+        String target_currency = "EUR";
+
+        //isvalidchoice returns false
+        when(!mockController.isValidChoice(base_currency, target_currency)).thenReturn(false);
+        Assertions.assertFalse(mockController.isValidChoice(base_currency, target_currency));
+
+    }
+
+    @Test
+    @DisplayName("Empty Target Currency Test")
+    void emptyTargetCurrency_mocKTest() {
+        String base_currency = "USD";
+        String target_currency = "";
+        //isvalidchoice returns false
+        when(!mockController.isValidChoice(base_currency, target_currency)).thenReturn(false);
+        Assertions.assertFalse(mockController.isValidChoice(base_currency, target_currency));
+    }
+
+    @Test
+    @DisplayName("Null Base Currency Test")
+    void nullBaseCurrency_mocKTest() {
+        String base_currency = null;
+        String target_currency = "USD";
+        //isvalidchoice returns false
+        when(!mockController.isValidChoice(base_currency, target_currency)).thenReturn(false);
+        Assertions.assertFalse(mockController.isValidChoice(base_currency, target_currency));
+    }
+
+    @Test
+    @DisplayName("Null Target Currency Test")
+    void nullTargetCurrency_mocKTest() {
+        String base_currency = "USD";
+        String target_currency = null;
+        //isvalidchoice returns false
+        when(!mockController.isValidChoice(base_currency, target_currency)).thenReturn(false);
+        Assertions.assertFalse(mockController.isValidChoice(base_currency, target_currency));
     }
 }

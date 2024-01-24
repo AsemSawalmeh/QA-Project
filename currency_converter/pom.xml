@@ -19,12 +19,34 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.15.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
         </dependency>
 
         <dependency>
@@ -43,6 +65,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -98,30 +121,5 @@
             </plugin>
         </plugins>
     </reporting>
-
-    <profiles>
-        <profile>
-            <id>production</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.vaadin</groupId>
-                        <artifactId>vaadin-maven-plugin</artifactId>
-                        <version>${vaadin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>frontend</id>
-                                <phase>compile</phase>
-                                <goals>
-                                    <goal>prepare-frontend</goal>
-                                    <goal>build-frontend</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
 </project>

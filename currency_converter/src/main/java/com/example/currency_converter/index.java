@@ -1,11 +1,9 @@
 package com.example.currency_converter;
 
-
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.icon.SvgIcon;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -14,7 +12,6 @@ import com.vaadin.flow.server.InputStreamFactory;
 import com.vaadin.flow.server.StreamResource;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
 
 @Route("")
 public class index extends VerticalLayout {

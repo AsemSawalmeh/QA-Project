@@ -1,13 +1,30 @@
 package com.example.currency_converter;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
 public class CurrencyConverterController {
+
+    private static String dbUsername = "root"; // database username
+    private static String dbPassword = "123123"; // database password
+    private static String URL = "127.0.0.1"; // server location
+    private static String port = "3306"; // port that mysql uses
+    private static String dbName = "currency_converter"; //database on mysql to connect to
+    private static Connection connection;
+
     String[] currencies_array = {
             "USD", "EUR", "GBP", "INR", "AUD", "CAD", "SGD", "CHF", "MYR", "JPY", "CNY", "NZD", "THB", "HUF", "AED",
             "HKD", "MXN", "ZAR", "PHP", "SEK", "IDR", "BRL", "SAR", "TRY", "KES", "KRW", "EGP", "IQD", "NOK", "KWD",
@@ -27,11 +44,41 @@ public class CurrencyConverterController {
     ArrayList<String> currencies_name_list = new ArrayList<>(List.of(currencies_array));
     String[] restricted_currencies = {"BWP", "AUD"};
     ArrayList<String> restricted_currencies_list = new ArrayList<>(List.of(restricted_currencies));
-    ArrayList<CurrencyRecord> conversion_rates = getRecordsFromFile();
+    ArrayList<conversion_rates> conversion_rates;
 
+    {
+        try {
+            conversion_rates = getRecordsFromDB();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
-    public ArrayList<CurrencyRecord> getRecordsFromFile() {
-        ArrayList<CurrencyRecord> temp_currency_rates = new ArrayList<>();
+    public ArrayList<conversion_rates> getRecordsFromJson() throws JsonProcessingException {
+        ArrayList<conversion_rates> temp_currency_rates = new ArrayList<>();
+        File currency_rates_file = new File("src/main/resources/data/conversion_rates.json");
+        String currency_rates_string = "";
+
+        try {
+            Scanner scanner = new Scanner(currency_rates_file);
+            while (scanner.hasNextLine()) {
+                currency_rates_string += scanner.nextLine();
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        Gson gson = new Gson();
+        temp_currency_rates = gson.fromJson(currency_rates_string, new TypeToken<ArrayList<conversion_rates>>() {
+        }.getType());
+
+        return temp_currency_rates;
+    }
+
+    public ArrayList<conversion_rates> getRecordsFromFile() {
+        ArrayList<conversion_rates> temp_currency_rates = new ArrayList<>();
         File currency_rates_file = new File("src/main/resources/data/conversion_rates");
 
         try {
@@ -39,7 +86,7 @@ public class CurrencyConverterController {
             while (scanner.hasNextLine()) {
                 String currency_rates_string = scanner.nextLine();
                 String[] current_record = currency_rates_string.split("\\s+");
-                CurrencyRecord record = new CurrencyRecord(current_record[0], Double.parseDouble(current_record[1]), Double.parseDouble(current_record[2]));
+                conversion_rates record = new conversion_rates(current_record[0], Double.parseDouble(current_record[1]), Double.parseDouble(current_record[2]));
                 temp_currency_rates.add(record);
             }
         } catch (FileNotFoundException e) {
@@ -48,12 +95,31 @@ public class CurrencyConverterController {
         return temp_currency_rates;
     }
 
+    public ArrayList<conversion_rates> getRecordsFromDB() throws SQLException, ClassNotFoundException {
+        DBConn conn_string = new DBConn(URL, port, dbName, dbUsername, dbPassword);
+        connection = conn_string.connectDB();
+
+        ArrayList<conversion_rates> temp_currency_rates = new ArrayList<>();
+        String selectVisitTXT = "select * from currency_records";
+        Statement sql_stmt = connection.createStatement();
+        ResultSet results = sql_stmt.executeQuery(selectVisitTXT);
+
+
+        while (results.next()) {
+            temp_currency_rates.add(new conversion_rates(results.getString(1), results.getDouble(2), results.getDouble(3)));
+        }
+
+
+        connection.close();
+        return temp_currency_rates;
+    }
+
     public ArrayList<String> getCurrencies() {
         return this.currencies_name_list;
     }
 
     public boolean isValidChoice(String currency_one, String currency_two) {
-        if (currency_one == null || currency_two == null) {
+        if (currency_one == null || currency_two == null || currency_one.equals("") || currency_two.equals("")) {
             return false;
         } else if (currency_one == currency_two) {
             return false;
@@ -65,12 +131,13 @@ public class CurrencyConverterController {
     }
 
     public boolean isValidNumber(String input) {
-        if (input == null || input.trim().isEmpty()) {
+        if (input.contains("-")) {
+            return false;
+        } else if (input == null || input.trim().isEmpty()) {
             return false;
         }
 
         String sanitizedInput = input.replace(",", ".");
-
         try {
 
             Double.parseDouble(sanitizedInput);
