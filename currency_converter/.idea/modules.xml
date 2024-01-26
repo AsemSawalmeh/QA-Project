@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/QA-Project.iml" filepath="$PROJECT_DIR$/.idea/QA-Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/currency_converter/currency_converter.iml" filepath="$PROJECT_DIR$/currency_converter/currency_converter.iml" />
+    </modules>
+  </component>
+</project>

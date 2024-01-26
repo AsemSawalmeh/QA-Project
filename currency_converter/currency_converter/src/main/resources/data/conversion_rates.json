@@ -1,0 +1,922 @@
+[
+  {
+    "currency_name": "USD",
+    "dollar_to_currency": 1,
+    "currency_to_dollar": 1
+  },
+  {
+    "currency_name": "EUR",
+    "dollar_to_currency": 0.9124101365942007,
+    "currency_to_dollar": 1.0959983453633586
+  },
+  {
+    "currency_name": "GBP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "INR",
+    "dollar_to_currency": 82.82348573780213,
+    "currency_to_dollar": 0.012073870003077906
+  },
+  {
+    "currency_name": "AUD",
+    "dollar_to_currency": 1.4943002156468466,
+    "currency_to_dollar": 0.6692095668119301
+  },
+  {
+    "currency_name": "CAD",
+    "dollar_to_currency": 1.3399650963804888,
+    "currency_to_dollar": 0.7462880956386089
+  },
+  {
+    "currency_name": "SGD",
+    "dollar_to_currency": 1.3312644566224452,
+    "currency_to_dollar": 0.7511655516869299
+  },
+  {
+    "currency_name": "CHF",
+    "dollar_to_currency": 0.852200516247569,
+    "currency_to_dollar": 1.1734327554778134
+  },
+  {
+    "currency_name": "MYR",
+    "dollar_to_currency": 4.64599817388342,
+    "currency_to_dollar": 0.2152389997958472
+  },
+  {
+    "currency_name": "JPY",
+    "dollar_to_currency": 144.83580435611964,
+    "currency_to_dollar": 0.006904370120672774
+  },
+  {
+    "currency_name": "CNY",
+    "dollar_to_currency": 7.135630900979077,
+    "currency_to_dollar": 0.14014177777367806
+  },
+  {
+    "currency_name": "NZD",
+    "dollar_to_currency": 1.60046673891993,
+    "currency_to_dollar": 0.6248177332787602
+  },
+  {
+    "currency_name": "THB",
+    "dollar_to_currency": 34.93961017384265,
+    "currency_to_dollar": 0.028620811595334986
+  },
+  {
+    "currency_name": "HUF",
+    "dollar_to_currency": 345.9199937881844,
+    "currency_to_dollar": 0.0028908418650479203
+  },
+  {
+    "currency_name": "AED",
+    "dollar_to_currency": 3.6725,
+    "currency_to_dollar": 0.27229407760381213
+  },
+  {
+    "currency_name": "HKD",
+    "dollar_to_currency": 7.819580302234966,
+    "currency_to_dollar": 0.1278841013646453
+  },
+  {
+    "currency_name": "MXN",
+    "dollar_to_currency": 16.85893241133374,
+    "currency_to_dollar": 0.05931573694000522
+  },
+  {
+    "currency_name": "ZAR",
+    "dollar_to_currency": 18.627792873319972,
+    "currency_to_dollar": 0.0536832252108767
+  },
+  {
+    "currency_name": "PHP",
+    "dollar_to_currency": 55.872248343898306,
+    "currency_to_dollar": 0.01789797313766429
+  },
+  {
+    "currency_name": "SEK",
+    "dollar_to_currency": 10.276257860714583,
+    "currency_to_dollar": 0.0973116881216975
+  },
+  {
+    "currency_name": "IDR",
+    "dollar_to_currency": 15527.774398688005,
+    "currency_to_dollar": 0.0000644007295781225
+  },
+  {
+    "currency_name": "BRL",
+    "dollar_to_currency": 4.852853518057815,
+    "currency_to_dollar": 0.2060643281893691
+  },
+  {
+    "currency_name": "SAR",
+    "dollar_to_currency": 3.75,
+    "currency_to_dollar": 0.26666666666666666
+  },
+  {
+    "currency_name": "TRY",
+    "dollar_to_currency": 30.098152857265728,
+    "currency_to_dollar": 0.03322463025363362
+  },
+  {
+    "currency_name": "KES",
+    "dollar_to_currency": 159.4959521103527,
+    "currency_to_dollar": 0.006269751594122689
+  },
+  {
+    "currency_name": "KRW",
+    "dollar_to_currency": 1311.5913542326052,
+    "currency_to_dollar": 0.0007624325951622995
+  },
+  {
+    "currency_name": "EGP",
+    "dollar_to_currency": 30.904206160518108,
+    "currency_to_dollar": 0.0323580549134945
+  },
+  {
+    "currency_name": "IQD",
+    "dollar_to_currency": 1310.2112152037985,
+    "currency_to_dollar": 0.0007632357198564002
+  },
+  {
+    "currency_name": "NOK",
+    "dollar_to_currency": 10.287203815507715,
+    "currency_to_dollar": 0.09720814498615492
+  },
+  {
+    "currency_name": "KWD",
+    "dollar_to_currency": 0.3072498502689407,
+    "currency_to_dollar": 3.254680186580023
+  },
+  {
+    "currency_name": "RUB",
+    "dollar_to_currency": 89.69874776782738,
+    "currency_to_dollar": 0.01114842765239443
+  },
+  {
+    "currency_name": "DKK",
+    "dollar_to_currency": 6.804115048296883,
+    "currency_to_dollar": 0.1469698840924665
+  },
+  {
+    "currency_name": "PKR",
+    "dollar_to_currency": 280.70573801027456,
+    "currency_to_dollar": 0.0035624494429230278
+  },
+  {
+    "currency_name": "ILS",
+    "dollar_to_currency": 3.732017823861954,
+    "currency_to_dollar": 0.2679515605756629
+  },
+  {
+    "currency_name": "PLN",
+    "dollar_to_currency": 3.975003444388288,
+    "currency_to_dollar": 0.25157210905357835
+  },
+  {
+    "currency_name": "QAR",
+    "dollar_to_currency": 3.64,
+    "currency_to_dollar": 0.2747252747252747
+  },
+  {
+    "currency_name": "XAU",
+    "dollar_to_currency": 0.0004880957734763618,
+    "currency_to_dollar": 2048.77824054428
+  },
+  {
+    "currency_name": "OMR",
+    "dollar_to_currency": 0.38500065227139463,
+    "currency_to_dollar": 2.597398196860924
+  },
+  {
+    "currency_name": "COP",
+    "dollar_to_currency": 3907.691683929678,
+    "currency_to_dollar": 0.00025590555265976703
+  },
+  {
+    "currency_name": "CLP",
+    "dollar_to_currency": 908.6309035541756,
+    "currency_to_dollar": 0.0011005568884884143
+  },
+  {
+    "currency_name": "TWD",
+    "dollar_to_currency": 31.093792080573937,
+    "currency_to_dollar": 0.03216076049549315
+  },
+  {
+    "currency_name": "ARS",
+    "dollar_to_currency": 816.1269309148854,
+    "currency_to_dollar": 0.001225299597550336
+  },
+  {
+    "currency_name": "CZK",
+    "dollar_to_currency": 22.524929311249814,
+    "currency_to_dollar": 0.04439525585994011
+  },
+  {
+    "currency_name": "VND",
+    "dollar_to_currency": 24485.632841319202,
+    "currency_to_dollar": 0.0000408402758662832
+  },
+  {
+    "currency_name": "MAD",
+    "dollar_to_currency": 9.959345717329935,
+    "currency_to_dollar": 0.1004082023440488
+  },
+  {
+    "currency_name": "JOD",
+    "dollar_to_currency": 0.709,
+    "currency_to_dollar": 1.4104372355430184
+  },
+  {
+    "currency_name": "BHD",
+    "dollar_to_currency": 0.376,
+    "currency_to_dollar": 2.6595744680851063
+  },
+  {
+    "currency_name": "XOF",
+    "dollar_to_currency": 598.5018159699221,
+    "currency_to_dollar": 0.0016708387064447194
+  },
+  {
+    "currency_name": "LKR",
+    "dollar_to_currency": 322.48774838433036,
+    "currency_to_dollar": 0.0031008929951913482
+  },
+  {
+    "currency_name": "UAH",
+    "dollar_to_currency": 37.85148485020231,
+    "currency_to_dollar": 0.026419042844884725
+  },
+  {
+    "currency_name": "NGN",
+    "dollar_to_currency": 958.9324232561606,
+    "currency_to_dollar": 0.0010428263512087638
+  },
+  {
+    "currency_name": "TND",
+    "dollar_to_currency": 3.0929136248225926,
+    "currency_to_dollar": 0.3233197306172297
+  },
+  {
+    "currency_name": "UGX",
+    "dollar_to_currency": 3802.817093325648,
+    "currency_to_dollar": 0.00026296294969198157
+  },
+  {
+    "currency_name": "RON",
+    "dollar_to_currency": 4.538591815514088,
+    "currency_to_dollar": 0.2203326583769309
+  },
+  {
+    "currency_name": "BDT",
+    "dollar_to_currency": 109.80348447861981,
+    "currency_to_dollar": 0.009107179109554699
+  },
+  {
+    "currency_name": "PEN",
+    "dollar_to_currency": 3.6973045204766954,
+    "currency_to_dollar": 0.27046730786217993
+  },
+  {
+    "currency_name": "GEL",
+    "dollar_to_currency": 2.6627087755141714,
+    "currency_to_dollar": 0.3755574057500521
+  },
+  {
+    "currency_name": "XAF",
+    "dollar_to_currency": 598.5018159699221,
+    "currency_to_dollar": 0.0016708387064447194
+  },
+  {
+    "currency_name": "FJD",
+    "dollar_to_currency": 2.235343261283358,
+    "currency_to_dollar": 0.4473585857350065
+  },
+  {
+    "currency_name": "VEF",
+    "dollar_to_currency": 3591003.6220053714,
+    "currency_to_dollar": 2.784736818064129e-7
+  },
+  {
+    "currency_name": "VES",
+    "dollar_to_currency": 35.91003622005371,
+    "currency_to_dollar": 0.02784736818064129
+  },
+  {
+    "currency_name": "BYN",
+    "dollar_to_currency": 3.2998439849461056,
+    "currency_to_dollar": 0.3030446301588808
+  },
+  {
+    "currency_name": "UZS",
+    "dollar_to_currency": 12354.718590097524,
+    "currency_to_dollar": 0.00008094073472474831
+  },
+  {
+    "currency_name": "BGN",
+    "dollar_to_currency": 1.7845191174550354,
+    "currency_to_dollar": 0.5603750557887744
+  },
+  {
+    "currency_name": "DZD",
+    "dollar_to_currency": 134.54948057123093,
+    "currency_to_dollar": 0.007432210037188488
+  },
+  {
+    "currency_name": "IRR",
+    "dollar_to_currency": 42172.86457525971,
+    "currency_to_dollar": 0.000023711929698667898
+  },
+  {
+    "currency_name": "DOP",
+    "dollar_to_currency": 58.58664309112938,
+    "currency_to_dollar": 0.01706873695501783
+  },
+  {
+    "currency_name": "ISK",
+    "dollar_to_currency": 136.59290925557872,
+    "currency_to_dollar": 0.007321024242399742
+  },
+  {
+    "currency_name": "CRC",
+    "dollar_to_currency": 520.4971325721556,
+    "currency_to_dollar": 0.0019212401710231742
+  },
+  {
+    "currency_name": "XAG",
+    "dollar_to_currency": 0.04305485786500755,
+    "currency_to_dollar": 23.226182818565082
+  },
+  {
+    "currency_name": "SYP",
+    "dollar_to_currency": 13001.857584863757,
+    "currency_to_dollar": 0.00007691208686704584
+  },
+  {
+    "currency_name": "JMD",
+    "dollar_to_currency": 155.2912590590002,
+    "currency_to_dollar": 0.006439512475200342
+  },
+  {
+    "currency_name": "LYD",
+    "dollar_to_currency": 4.790083875607657,
+    "currency_to_dollar": 0.20876461163702334
+  },
+  {
+    "currency_name": "GHS",
+    "dollar_to_currency": 11.969803210006422,
+    "currency_to_dollar": 0.08354356228379994
+  },
+  {
+    "currency_name": "MUR",
+    "dollar_to_currency": 44.15360330362553,
+    "currency_to_dollar": 0.022648208190924436
+  },
+  {
+    "currency_name": "AOA",
+    "dollar_to_currency": 847.0626745243923,
+    "currency_to_dollar": 0.0011805501884042746
+  },
+  {
+    "currency_name": "UYU",
+    "dollar_to_currency": 39.41015357096218,
+    "currency_to_dollar": 0.02537417161289142
+  },
+  {
+    "currency_name": "AFN",
+    "dollar_to_currency": 71.0983979155988,
+    "currency_to_dollar": 0.01406501453362007
+  },
+  {
+    "currency_name": "LBP",
+    "dollar_to_currency": 14966.983182501832,
+    "currency_to_dollar": 0.00006681373178591648
+  },
+  {
+    "currency_name": "XPF",
+    "dollar_to_currency": 108.87949123995958,
+    "currency_to_dollar": 0.009184466134178561
+  },
+  {
+    "currency_name": "TTD",
+    "dollar_to_currency": 6.784925833616661,
+    "currency_to_dollar": 0.1473855462126631
+  },
+  {
+    "currency_name": "TZS",
+    "dollar_to_currency": 2514.6307558705726,
+    "currency_to_dollar": 0.0003976726991290604
+  },
+  {
+    "currency_name": "ALL",
+    "dollar_to_currency": 94.74654410465246,
+    "currency_to_dollar": 0.010554474671872446
+  },
+  {
+    "currency_name": "XCD",
+    "dollar_to_currency": 2.7035972684449536,
+    "currency_to_dollar": 0.3698775744714289
+  },
+  {
+    "currency_name": "GTQ",
+    "dollar_to_currency": 7.817760747121044,
+    "currency_to_dollar": 0.12791386591975948
+  },
+  {
+    "currency_name": "NPR",
+    "dollar_to_currency": 132.57969479478675,
+    "currency_to_dollar": 0.007542633142638081
+  },
+  {
+    "currency_name": "BOB",
+    "dollar_to_currency": 6.904573456760964,
+    "currency_to_dollar": 0.14483153901720014
+  },
+  {
+    "currency_name": "ZWD",
+    "dollar_to_currency": 361.9,
+    "currency_to_dollar": 0.002763194252555955
+  },
+  {
+    "currency_name": "BBD",
+    "dollar_to_currency": 2,
+    "currency_to_dollar": 0.5
+  },
+  {
+    "currency_name": "CUC",
+    "dollar_to_currency": 1,
+    "currency_to_dollar": 1
+  },
+  {
+    "currency_name": "LAK",
+    "dollar_to_currency": 20561.062007526667,
+    "currency_to_dollar": 0.000048635620068357165
+  },
+  {
+    "currency_name": "BND",
+    "dollar_to_currency": 1.3312644566224452,
+    "currency_to_dollar": 0.7511655516869299
+  },
+  {
+    "currency_name": "BWP",
+    "dollar_to_currency": 13.5178546508411,
+    "currency_to_dollar": 0.07397623556617977
+  },
+  {
+    "currency_name": "HNL",
+    "dollar_to_currency": 24.724219850447934,
+    "currency_to_dollar": 0.040446170032818356
+  },
+  {
+    "currency_name": "PYG",
+    "dollar_to_currency": 7291.854007251784,
+    "currency_to_dollar": 0.00013713933370107178
+  },
+  {
+    "currency_name": "ETB",
+    "dollar_to_currency": 56.40299351737194,
+    "currency_to_dollar": 0.017729555430280545
+  },
+  {
+    "currency_name": "NAD",
+    "dollar_to_currency": 18.627792873319972,
+    "currency_to_dollar": 0.0536832252108767
+  },
+  {
+    "currency_name": "PGK",
+    "dollar_to_currency": 3.7070791861135497,
+    "currency_to_dollar": 0.2697541513938865
+  },
+  {
+    "currency_name": "SDG",
+    "dollar_to_currency": 600.9984174579416,
+    "currency_to_dollar": 0.0016638978921603913
+  },
+  {
+    "currency_name": "MOP",
+    "dollar_to_currency": 8.054167711302016,
+    "currency_to_dollar": 0.12415932171324784
+  },
+  {
+    "currency_name": "BMD",
+    "dollar_to_currency": 1,
+    "currency_to_dollar": 1
+  },
+  {
+    "currency_name": "NIO",
+    "dollar_to_currency": 36.70077187220236,
+    "currency_to_dollar": 0.027247383337934996
+  },
+  {
+    "currency_name": "BAM",
+    "dollar_to_currency": 1.7845191174550354,
+    "currency_to_dollar": 0.5603750557887744
+  },
+  {
+    "currency_name": "KZT",
+    "dollar_to_currency": 452.0098789024371,
+    "currency_to_dollar": 0.0022123410276522794
+  },
+  {
+    "currency_name": "PAB",
+    "dollar_to_currency": 1,
+    "currency_to_dollar": 1
+  },
+  {
+    "currency_name": "GYD",
+    "dollar_to_currency": 208.92200161871094,
+    "currency_to_dollar": 0.0047864752982073695
+  },
+  {
+    "currency_name": "YER",
+    "dollar_to_currency": 250.35499367556443,
+    "currency_to_dollar": 0.003994328155067289
+  },
+  {
+    "currency_name": "MGA",
+    "dollar_to_currency": 4587.460010674233,
+    "currency_to_dollar": 0.0002179855514104039
+  },
+  {
+    "currency_name": "KYD",
+    "dollar_to_currency": 0.8234015702872918,
+    "currency_to_dollar": 1.2144742445063488
+  },
+  {
+    "currency_name": "MZN",
+    "dollar_to_currency": 63.87844005854287,
+    "currency_to_dollar": 0.01565473419644448
+  },
+  {
+    "currency_name": "RSD",
+    "dollar_to_currency": 106.95613973617934,
+    "currency_to_dollar": 0.009349626888803437
+  },
+  {
+    "currency_name": "SCR",
+    "dollar_to_currency": 13.240527526259227,
+    "currency_to_dollar": 0.07552569170803457
+  },
+  {
+    "currency_name": "AMD",
+    "dollar_to_currency": 402.8554141314089,
+    "currency_to_dollar": 0.002482280155415278
+  },
+  {
+    "currency_name": "AZN",
+    "dollar_to_currency": 1.701569573817081,
+    "currency_to_dollar": 0.5876926899654943
+  },
+  {
+    "currency_name": "SBD",
+    "dollar_to_currency": 8.311802163429313,
+    "currency_to_dollar": 0.12031085200750452
+  },
+  {
+    "currency_name": "SLL",
+    "dollar_to_currency": 22907.31541269644,
+    "currency_to_dollar": 0.000043654176929250614
+  },
+  {
+    "currency_name": "TOP",
+    "dollar_to_currency": 2.3534616586636217,
+    "currency_to_dollar": 0.42490600869522355
+  },
+  {
+    "currency_name": "BZD",
+    "dollar_to_currency": 2.0145001314301534,
+    "currency_to_dollar": 0.49640105969616904
+  },
+  {
+    "currency_name": "GMD",
+    "dollar_to_currency": 67.22385437257377,
+    "currency_to_dollar": 0.01487567187768965
+  },
+  {
+    "currency_name": "MWK",
+    "dollar_to_currency": 1682.2789906700214,
+    "currency_to_dollar": 0.0005944317235999708
+  },
+  {
+    "currency_name": "BIF",
+    "dollar_to_currency": 2857.764458482926,
+    "currency_to_dollar": 0.00034992387039863335
+  },
+  {
+    "currency_name": "HTG",
+    "dollar_to_currency": 131.72067692696518,
+    "currency_to_dollar": 0.0075918225090390885
+  },
+  {
+    "currency_name": "SOS",
+    "dollar_to_currency": 571.2845860917614,
+    "currency_to_dollar": 0.001750441066231353
+  },
+  {
+    "currency_name": "GNF",
+    "dollar_to_currency": 8588.622492479391,
+    "currency_to_dollar": 0.00011643310680794828
+  },
+  {
+    "currency_name": "MNT",
+    "dollar_to_currency": 3419.6250015948817,
+    "currency_to_dollar": 0.0002924297253452087
+  },
+  {
+    "currency_name": "MVR",
+    "dollar_to_currency": 15.421756430516496,
+    "currency_to_dollar": 0.06484345700216124
+  },
+  {
+    "currency_name": "CDF",
+    "dollar_to_currency": 2705.84628140309,
+    "currency_to_dollar": 0.00036957014405173815
+  },
+  {
+    "currency_name": "STN",
+    "dollar_to_currency": 22.588839548684728,
+    "currency_to_dollar": 0.04426964908244818
+  },
+  {
+    "currency_name": "TJS",
+    "dollar_to_currency": 10.939768208771014,
+    "currency_to_dollar": 0.0914096149860145
+  },
+  {
+    "currency_name": "KPW",
+    "dollar_to_currency": 900.0268975445995,
+    "currency_to_dollar": 0.001111077905258322
+  },
+  {
+    "currency_name": "KGS",
+    "dollar_to_currency": 89.31864105147551,
+    "currency_to_dollar": 0.011195871189124865
+  },
+  {
+    "currency_name": "LRD",
+    "dollar_to_currency": 190.374397024423,
+    "currency_to_dollar": 0.005252807182216371
+  },
+  {
+    "currency_name": "LSL",
+    "dollar_to_currency": 18.627792873319972,
+    "currency_to_dollar": 0.0536832252108767
+  },
+  {
+    "currency_name": "MMK",
+    "dollar_to_currency": 2099.0047869393543,
+    "currency_to_dollar": 0.00047641625508541185
+  },
+  {
+    "currency_name": "GIP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "XPT",
+    "dollar_to_currency": 0.001088796364729705,
+    "currency_to_dollar": 918.4453883148767
+  },
+  {
+    "currency_name": "MDL",
+    "dollar_to_currency": 17.763213411515565,
+    "currency_to_dollar": 0.05629612034901964
+  },
+  {
+    "currency_name": "CUP",
+    "dollar_to_currency": 23.99274067159678,
+    "currency_to_dollar": 0.041679273480575124
+  },
+  {
+    "currency_name": "KHR",
+    "dollar_to_currency": 4097.445538074793,
+    "currency_to_dollar": 0.000244054494613211
+  },
+  {
+    "currency_name": "MKD",
+    "dollar_to_currency": 56.111618202194265,
+    "currency_to_dollar": 0.01782162111947245
+  },
+  {
+    "currency_name": "VUV",
+    "dollar_to_currency": 119.02659579073499,
+    "currency_to_dollar": 0.00840148366301374
+  },
+  {
+    "currency_name": "ANG",
+    "dollar_to_currency": 1.7929443312186715,
+    "currency_to_dollar": 0.5577418007843534
+  },
+  {
+    "currency_name": "MRU",
+    "dollar_to_currency": 39.59519892651966,
+    "currency_to_dollar": 0.02525558722045542
+  },
+  {
+    "currency_name": "SZL",
+    "dollar_to_currency": 18.627792873319972,
+    "currency_to_dollar": 0.0536832252108767
+  },
+  {
+    "currency_name": "CVE",
+    "dollar_to_currency": 100.6114657622425,
+    "currency_to_dollar": 0.009939225041836934
+  },
+  {
+    "currency_name": "SRD",
+    "dollar_to_currency": 36.63126978523626,
+    "currency_to_dollar": 0.027299080972700444
+  },
+  {
+    "currency_name": "SVC",
+    "dollar_to_currency": 8.75,
+    "currency_to_dollar": 0.11428571428571428
+  },
+  {
+    "currency_name": "XPD",
+    "dollar_to_currency": 0.0010165985912625132,
+    "currency_to_dollar": 983.6724235060178
+  },
+  {
+    "currency_name": "BSD",
+    "dollar_to_currency": 1,
+    "currency_to_dollar": 1
+  },
+  {
+    "currency_name": "XDR",
+    "dollar_to_currency": 0.7478484515166016,
+    "currency_to_dollar": 1.3371693128093625
+  },
+  {
+    "currency_name": "RWF",
+    "dollar_to_currency": 1269.660835977508,
+    "currency_to_dollar": 0.0007876119130902412
+  },
+  {
+    "currency_name": "AWG",
+    "dollar_to_currency": 1.79,
+    "currency_to_dollar": 0.5586592178770949
+  },
+  {
+    "currency_name": "BTN",
+    "dollar_to_currency": 82.82348573780213,
+    "currency_to_dollar": 0.012073870003077906
+  },
+  {
+    "currency_name": "DJF",
+    "dollar_to_currency": 177.96315374389005,
+    "currency_to_dollar": 0.005619140698299367
+  },
+  {
+    "currency_name": "KMF",
+    "dollar_to_currency": 448.8763619774416,
+    "currency_to_dollar": 0.002227784941926292
+  },
+  {
+    "currency_name": "ERN",
+    "dollar_to_currency": 15,
+    "currency_to_dollar": 0.06666666666666667
+  },
+  {
+    "currency_name": "FKP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "SHP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "SPL",
+    "dollar_to_currency": 0.166666666,
+    "currency_to_dollar": 6.000000024
+  },
+  {
+    "currency_name": "WST",
+    "dollar_to_currency": 2.717905943436193,
+    "currency_to_dollar": 0.36793031871283977
+  },
+  {
+    "currency_name": "JEP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "TMT",
+    "dollar_to_currency": 3.5037749211994904,
+    "currency_to_dollar": 0.28540646088580873
+  },
+  {
+    "currency_name": "GGP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "IMP",
+    "dollar_to_currency": 0.7845784595095253,
+    "currency_to_dollar": 1.2745697869721586
+  },
+  {
+    "currency_name": "TVD",
+    "dollar_to_currency": 1.4943002156468466,
+    "currency_to_dollar": 0.6692095668119301
+  },
+  {
+    "currency_name": "ZMW",
+    "dollar_to_currency": 26.13506504486199,
+    "currency_to_dollar": 0.03826277066016312
+  },
+  {
+    "currency_name": "ADA",
+    "dollar_to_currency": 1.8087228386005485,
+    "currency_to_dollar": 0.5528763051246279
+  },
+  {
+    "currency_name": "BCH",
+    "dollar_to_currency": 0.003756511798519645,
+    "currency_to_dollar": 266.204408141105
+  },
+  {
+    "currency_name": "BTC",
+    "dollar_to_currency": 0.00002293881881482424,
+    "currency_to_dollar": 43594.22375112658
+  },
+  {
+    "currency_name": "CLF",
+    "dollar_to_currency": 0.024718274037309893,
+    "currency_to_dollar": 40.455899084644614
+  },
+  {
+    "currency_name": "CNH",
+    "dollar_to_currency": 7.189807354469912,
+    "currency_to_dollar": 0.13908578501457328
+  },
+  {
+    "currency_name": "DOG",
+    "dollar_to_currency": 12.20483262480137,
+    "currency_to_dollar": 0.08193475738191655
+  },
+  {
+    "currency_name": "DOT",
+    "dollar_to_currency": 0.12824676069354143,
+    "currency_to_dollar": 7.797467901661866
+  },
+  {
+    "currency_name": "ETH",
+    "dollar_to_currency": 0.0003817182802425587,
+    "currency_to_dollar": 2619.7330643021887
+  },
+  {
+    "currency_name": "LIN",
+    "dollar_to_currency": 0.06910322923577135,
+    "currency_to_dollar": 14.471103753894457
+  },
+  {
+    "currency_name": "LTC",
+    "dollar_to_currency": 0.01354346606077256,
+    "currency_to_dollar": 73.83634259596299
+  },
+  {
+    "currency_name": "LUN",
+    "dollar_to_currency": 1.5837026014738913,
+    "currency_to_dollar": 0.6314316836187163
+  },
+  {
+    "currency_name": "MXV",
+    "dollar_to_currency": 2.106102031538808,
+    "currency_to_dollar": 0.47481080452182906
+  },
+  {
+    "currency_name": "SLE",
+    "dollar_to_currency": 22.90731541269644,
+    "currency_to_dollar": 0.04365417692925062
+  },
+  {
+    "currency_name": "UNI",
+    "dollar_to_currency": 0.1500113882777877,
+    "currency_to_dollar": 6.666160559411813
+  },
+  {
+    "currency_name": "VED",
+    "dollar_to_currency": 35.91003622005371,
+    "currency_to_dollar": 0.02784736818064129
+  },
+  {
+    "currency_name": "XBT",
+    "dollar_to_currency": 0.00002293881881482424,
+    "currency_to_dollar": 43594.22375112658
+  },
+  {
+    "currency_name": "XLM",
+    "dollar_to_currency": 8.273213343949301,
+    "currency_to_dollar": 0.120872018939456
+  },
+  {
+    "currency_name": "XRP",
+    "dollar_to_currency": 1.720108180154663,
+    "currency_to_dollar": 0.5813587840214127
+  }
+]
