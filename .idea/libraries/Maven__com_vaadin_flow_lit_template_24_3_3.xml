@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.vaadin:flow-lit-template:24.3.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-lit-template/24.3.3/flow-lit-template-24.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-lit-template/24.3.3/flow-lit-template-24.3.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-lit-template/24.3.3/flow-lit-template-24.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
